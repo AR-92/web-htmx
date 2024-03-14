@@ -8,7 +8,8 @@
     "start:server": "nodemon app.js",
     "start:browser-sync": "browser-sync start --proxy http://localhost:4000 --files *",
     "kill": "kill-port 3000",
-    "start": "npm run start:tailwind & npm run start:server & npm run start:browser-sync"
+    "start": "npm run start:tailwind & npm run start:server & npm run start:browser-sync",
+    "deploy": "pm2 start app.js"
   },
   "keywords": [],
   "author": "",
