@@ -1,4 +1,4 @@
-div.grid.grid-cols-5.gap-4
+div.grid.gap-4(class="xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-5")
     - for (var i = 0; i < cards.length; i++)
         a.rounded-lg.bg-center.bg-cover(href='../agent/profile?user='+cards[i].profiles_id , class="bg-[#4A4D91] bg-[url('/images/cBlurrs.png')]")
             div.bg-contain.bg-no-repeat.w-full.flex.flex-col.p-2.items-center(class="bg-[url('/images/graph.png')]")

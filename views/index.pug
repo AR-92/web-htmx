@@ -1,9 +1,9 @@
 
 include partials/mainNav
-    div.p-2.px-6.flex.flex-col.gap-3.overflow-y-auto(class='h-[83vh]')
+    div.p-2.px-6.flex.flex-col.gap-3.overflow-y-auto(class='md:h-[83vh] h-full')
         div.text-sm.m-2.py-1.px-8.rounded-full.w-fit(class=" bg-[#4A4D91]") Home / Agents By Location / Toronto
         include partials/categories
         include partials/agentsGrid
-        a(href="./filter/topagents")
+        a(href="./filter/topagents",class="hidden md:block")
             img(src="/images/agentsnearyou.png")
         
