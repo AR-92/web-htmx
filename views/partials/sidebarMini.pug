@@ -1,4 +1,4 @@
-div.flex.flex-col.gap-2.h-screen.text-sm.border-r.border-slate-500(class="bg-[url('/images/sBlurrs.png')] xl:hidden bg-[#2F3159]")
+div.flex.flex-col.gap-2.text-sm.border-r.border-slate-500.bg-center.bg-cover(class="bg-[url('/images/sBlurrs.png')] xl:hidden bg-[#2F3159]")
     a.p-4.border-b.border-slate-500(href="../")
         img(src="/favicon.png")
     div.flex.flex-col.grow
@@ -8,13 +8,14 @@ div.flex.flex-col.gap-2.h-screen.text-sm.border-r.border-slate-500(class="bg-[ur
         a(href="/filter/topagents" , class="hover:bg-[#2F3159]")
             div.px-4.py-3.gap-2.flex
                 img(src="/images/search.svg")
-        a(href='/agent/settings' , class="hover:bg-[#2F3159]")
-            div.px-4.py-3.gap-2.flex
-                img(src="/images/settings.svg")
+        if auth.data.session
+            a(href='/agent/settings' , class="hover:bg-[#2F3159]")
+                div.px-4.py-3.gap-2.flex
+                    img(src="/images/settings.svg")
         if auth.data.session
             a(href="/auth/login" , class="hover:bg-[#2F3159]")
                 div.px-4.py-3.gap-2.flex
                     img(src="/images/logout.svg")
-                
-    a.w-full.flex.gap-2.p-4.items-center.border-t.border-slate-500(href='/agent/profile')
-        img.rounded-full.w-10.h-10(src="/images/dp.png")
+    if auth.data.session            
+        a.w-full.flex.gap-2.p-4.items-center.border-t.border-slate-500(href='/agent/profile')
+            img.rounded-full.w-10.h-10(src="/images/dp.png")
