@@ -1,13 +1,13 @@
 include ../partials/mainNav
-    div.p-2
+    div.p-2 
         div.text-sm.m-2.py-1.px-8.rounded-full.w-fit(class=" bg-[#4A4D91]") Home / Agents By Location / Toronto
         div.flex.flex-col.p-2.gap-2
             include ../partials/agentBanner
-            div.grid.grid-cols-12.gap-2.px-4
+            div.grid.grid-cols-1.px-4(class="md:grid-cols-12 md:gap-2")
                 div.col-span-3.flex.flex-col.gap-2(class='mt-[-150px]')
                     include ../partials/agentCard
                     include ../partials/brokrageCard
-                div.col-span-9.flex.flex-col.gap-2
+                div.col-span-9.flex.flex-col.gap-2.mt-5
                     div.w-full.rounded-lg.flex.justify-between(class="bg-[url('/images/hBlurrs.png')]")
                         div.gap-5.flex
                             img.w-10.h-10.self-center(src="/images/lang.svg")
@@ -21,16 +21,16 @@ include ../partials/mainNav
                         div.text-sm ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur    
                     div.w-full.rounded-lg.p-2(class="bg-[url('/images/hBlurrs.png')]")
                         div.my-2.font-bold Gallery
-                        div.flex.gap-2
-                            div.min-w-52.h-36.rounded-lg.bg-center(class="bg-[url('/images/cover.jpg')]")
-                            div.min-w-52.h-36.rounded-lg.bg-center(class="bg-[url('/images/cover.jpg')]")
-                            div.min-w-52.h-36.rounded-lg.bg-center(class="bg-[url('/images/cover.jpg')]")
+                        div.grid.grid-cols-1.gap-2(class="md:grid md:grid-cols-3 md:gap-2")
+                            div.h-36.rounded-lg.bg-center(class="bg-[url('/images/cover.jpg')]")
+                            div.h-36.rounded-lg.bg-center(class="bg-[url('/images/cover.jpg')]")
+                            div.h-36.rounded-lg.bg-center(class="bg-[url('/images/cover.jpg')]")
                     div.w-full.rounded-lg.p-2(class="bg-[url('/images/hBlurrs.png')]")
                         div.my-2.font-bold Location
                         div.h-40.w-full.rounded-lg.bg-cover.bg-center(class="bg-[url('/images/map.png')]")
                     div.w-full.rounded-lg.p-2(class="bg-[url('/images/hBlurrs.png')]")
                         div.my-2.font-bold Features
-                        div.grid.grid-cols-5.p-4
+                        div.grid.grid-cols-3.p-4(class="md:grid-cols-5 md:gap-2")
                             - for (var i = 0; i < 18; i++)
                                 div.flex.gap-1
                                     img(src="/images/tick.svg")
