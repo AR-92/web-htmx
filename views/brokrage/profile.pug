@@ -1,0 +1,10 @@
+include ../partials/mainNav
+    div.overflow-y-auto.p-4(class='h-[83vh]')
+        div.text-sm.m-2.py-1.px-8.rounded-full.w-fit(class=" bg-[#4A4D91]") Home / Agents By Location / Toronto
+
+        div.flex.flex-col.p-2.gap-2
+            div.bg-gray-500.w-full.rounded-lg.h-64.bg-cover.bg-center(class="w-[400px] bg-[url('/images/cover.jpg')]")
+            div.flex.flex-col.gap-6.px-6
+                div.w-full.rounded-lg.h-20.bg-center.bg-cover(class="mt-[-50px] bg-[#4A4D91] bg-[url('/images/cBlurrs.png')]")
+                include ../partials/agentsGrid
+            

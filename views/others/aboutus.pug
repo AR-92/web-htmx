@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+    div(class="bg-[#2F3159]")
+        div.min-h-screen.items-center.flex.flex-col
+            a.p-4.absolute.left-0(href='../')
+                img(src="/images/logo.svg")
+            img.absolute.right-0.z-10(src="/images/graph.png", alt="", class="w-[300px]")
+            div.m-auto.flex.flex-col.gap-3.p-6.rounded-lg.items-center.text-white.mt-20.z-10.bg-center.bg-cover(class="bg-[url('/images/cBlurrs.png')] w-[600px]")
+                div.font-semibold.text-3xl About Us
+                div.text-xs.text-gray-500 AgentFlix: Where real estate agents shine with their portfolios.
+                div.text-sm.text-gray-300 Welcome to AgentFlix, the premier platform empowering real estate agents to showcase their portfolios like never before. With AgentFlix, agents can effortlessly display their listings, highlight unique properties, and engage with potential clients in a visually captivating manner. Our user-friendly interface and robust features make it simple for agents to stand out in a competitive market, driving success and growth in their businesses. Join AgentFlix today and unlock the potential of your real estate portfolio.
+                a.p-2.rounded-lg.w-fit.px-6.text-white.font-medium.flex.justify-center.text-sm(href="./landing", class="bg-gradient-to-r from-[#594ED1] to-[#974ED1]") Go Back !
+            img(src="/images/footerShade.svg", alt="", class="absolute bottom-0")
+            img(src="/images/footer.png")

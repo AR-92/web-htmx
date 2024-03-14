@@ -1,0 +1,33 @@
+div.w-64.min-h-screen.border-r.border-slate-500.p-4.flex.flex-col.gap-6.bg-cover.bg-center(class="bg-[url('/images/sBlurrs.png')] bg-[#2F3159]") 
+    div.font-bold Filters Results By:
+    div.text-sm.flex.flex-col.gap-2
+        div.w-full.flex.flex-col.gap-2
+            div.font-bold Brokerage
+            input.w-full.rounded-lg.h-8.text-xs.px-2.outline-transparent(placeholder="Please Enter" class="bg-[#494C7D]")
+        div.w-full.flex.flex-col.gap-2
+            div.font-bold Locations
+            input.w-full.rounded-lg.h-8.text-xs.px-2.outline-transparent(placeholder="Please Enter" class="bg-[#494C7D]")
+        div.w-full.flex.flex-col.gap-2
+            div.font-bold Languages
+            ul.flex.flex-col.gap-2
+                li.flex.gap-4 
+                    input(type="checkbox" checked)
+                    div English
+                li.flex.gap-4
+                    input(type="checkbox")
+                    div French
+                li.flex.gap-4 
+                    input(type="checkbox")
+                    div Spanish
+        div.w-full.flex.flex-col.gap-2
+            div.font-bold Years of Experience:
+            div.text-xs
+                div Minimum
+                input.w-full(type="range" max="100" value="10" step="1" )
+            div.text-xs
+                div Maximum
+                input.w-full(type="range" max="100" value="50" step="1" )
+        a.p-2.w-full.rounded-lg.text-white.font-medium.flex.justify-center.text-sm(href="../auth/register" class="bg-gradient-to-r from-[#594ED1] to-[#974ED1]") 
+            div.self-center Apply Filters 
+        a.p-2.w-full.rounded-lg.text-white.font-medium.flex.justify-center.text-sm.border(href="../auth/register" ) 
+            div.self-center Reset Filters 

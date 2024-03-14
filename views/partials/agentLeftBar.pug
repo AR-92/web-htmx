@@ -1,0 +1,28 @@
+div.w-full.rounded-lg.p-4.flex.flex-col.gap-2.bg-center.bg-cover(class="bg-[url('/images/cBlurrs.png')]")
+    div.font-bold.text-sm About Alexander
+    div.text-xs=data.about
+div.w-full.rounded-lg.p-4.flex.flex-col.gap-4.bg-center.bg-cover(class="bg-[url('/images/cBlurrs.png')]")
+    div.flex.flex-col.gap-1
+        div.font-bold.text-sm Service Areas
+        div.text-xs.grid.grid-cols-2.w-full.gap-1
+            - for (var i = 0; i < data.service_areas.split(',').length; i++)
+                div.font-medium.text-xs.rounded-full.px-4.py-1.my-2.w-fit(class="bg-[#3b3e74]")=data.service_areas.split(',')[i]
+
+
+    div.flex.flex-col.gap-1
+        div.font-bold.text-sm Specialties
+        div.text-xs=data.hobbies
+    div.flex.flex-col.gap-4
+        div.font-bold.text-sm Contact Information
+        div.text-xs.flex.flex-col.gap-3
+            div.gap-5.flex
+                img(src="/images/email.svg")
+                div
+                    div.self-center.text-xs.text-gray-400 Email
+                    div.self-center.text-sm=data.email
+            if data.contact
+                div.gap-5.flex
+                    img(src="/images/phone.svg")
+                    div
+                        div.self-center.text-xs.text-gray-400 Phone
+                        div.self-center.text-sm=data.contact

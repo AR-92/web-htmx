@@ -1,0 +1,17 @@
+if data.banner
+    img.w-full.rounded-lg.h-64.bg-cover.bg-center(src="https://zjhfywemboaxpglmjpaq.supabase.co/storage/v1/object/public/banners/"+data.profiles_id+".jpg?"+performance.now())
+else 
+    div.w-full.h-64.rounded-lg.bg-center.bg-cover(class="bg-[url('/images/cBlurrs.png')]")
+        div.grid.grid-cols-12
+            div.col-span-4
+            div.col-span-7
+                div.text-xs.mt-5.mb-2.text-slate-400 This is your default banner, You can change that from settings!
+                div.text-3xl.font-bold Banner Space: Elevate Your Message with Impactful Design
+                div.text-xs.mt-5.text-slate-400
+                    | Banner Space is your go-to destination for professional design services. Our team
+                    | specializes in creating eye-catching banners that not only capture attention but also
+                    | convey your message effectively. With a keen eye for aesthetics and a commitment to
+                    | quality, we help businesses and individuals make a memorable impact. Whether it's for
+                    | marketing campaigns, events, or promotions, trust Banner Space to elevate your visual
+                    | communication and leave a lasting impression on your audience. Explore our expertise today
+                    | and let your message shine.

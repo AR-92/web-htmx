@@ -1,0 +1,12 @@
+div.w-full.flex.p-3.gap-2.justify-between.border-b.border-slate-500.bg-cover.bg-center(class="bg-[url('/images/hBlurrs.png')]")
+
+    div.flex.justify-between.text-sm
+        //- div.self-center Search by Name , Location or Brokerage
+        input.rounded-lg.h-10.text-xs.px-2.outline-transparent.border.border-slate-500(class="w-[500px]",placeholder="Search by Name , Location or Brokerage" class="bg-[#494C7D]")
+        img(class="px-4",src="/images/search.svg")
+    if !auth.data.session
+        div.flex.gap-2.w-52
+            a.p-2.w-full.rounded-lg.text-white.font-medium.flex.justify-center.text-sm.border.border-slate-500(href="../auth/login") 
+                div.self-center Login
+            a.p-2.w-full.rounded-lg.text-white.font-medium.flex.justify-center.text-sm(href="../auth/register" class="bg-gradient-to-r from-[#594ED1] to-[#974ED1]") 
+                div.self-center Join Now

@@ -1,0 +1,31 @@
+extends ../layout
+
+block content
+    div(class="bg-[#2F3159]")
+        div.min-h-screen.items-center.flex.flex-col
+            a.p-4.absolute.left-0(href='../')
+                img(src="/images/logo.svg")
+            img.absolute.right-0.z-10(src="/images/graph.png", alt="", class="w-[300px]")
+            div.m-auto.flex.flex-col.gap-3.p-6.rounded-lg.items-center.text-white.mt-20.z-10.bg-center.bg-cover(class="bg-[url('/images/cBlurrs.png')] w-[450px]")
+                div.font-semibold.text-3xl Buyer/Seller Sign Up
+                div.text-xs.text-gray-500  
+                //- div.text-xs.text-gray-500 START FOR FREE 
+                a.p-2.rounded-lg.w-full.bg-white.text-black.font-medium.flex.justify-center
+                    div.flex.gap-2.items-center
+                        img(src="/images/google.png").w-4.h-4
+                        div.self-center.font-medium.text-sm Sign Up with Google
+                div.inline-flex.items-center.justify-between.w-52
+                    hr.w-20.h-px.my-3.bg-gray-500.border-0
+                    span.absolute.px-3.font-medium.text-xs.text-gray-500(class="-translate-x-1/2 left-1/2") OR
+                    hr.w-20.h-px.my-3.bg-gray-500.border-0
+
+                div.flex.flex-col.gap-2.w-full
+                    div.font-medium.text-xs E-mail Address
+                    input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter Your Email Here", class="bg-[#494C7D]")
+                    div.font-medium.text-xs Password
+                    input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter Your Password Here", class="bg-[#494C7D]")
+                a.p-2.rounded-lg.w-full.text-white.font-medium.flex.justify-center.text-sm(href="/", class="bg-gradient-to-r from-[#594ED1] to-[#974ED1]") Sign Up
+                div.flex.justify-between.w-full.gap-4
+                    a.p-2.rounded-lg.w-full.text-white.font-medium.text-xs.flex.justify-end(href="./login") Already Have an Account
+            img(src="/images/footerShade.svg", alt="", class="absolute bottom-0")
+            img(src="/images/footer.png")

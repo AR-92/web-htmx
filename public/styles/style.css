@@ -1,0 +1,5 @@
+/* Remove existing styles and add Tailwind CSS utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+

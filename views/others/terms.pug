@@ -1,0 +1,128 @@
+extends ../layout
+
+block content
+    div(class="bg-[#2F3159]").text-gray-300
+        a.p-4.absolute.left-0(href='../')
+            img(src="/images/logo.svg")
+
+        div.flex.py-5.px-32.gap-4
+            aside.py-16.px-5.h-screen.sticky.relative.h-fit.pb-0.px-0.top-0(class="w-1/2")
+                div.p-8.bg-center.bg-cover.rounded-lg(class="bg-[url('/images/cBlurrs.png')]")
+                    nav#sidebar-nav
+                        ul.flex.flex-col.gap-y-6(style="list-style-type: none;")
+                            li
+                                a(href="#terms-conditions") Terms & Conditions
+                            li
+                                a(href="#privacy-policy") Privacy Policy
+                            li
+                                a(href="#user-policy") User Policy
+                            li
+                                a(href="#copyrights") Copyright Policy
+                            li
+                                a(href="#accountsBilling") Account and Billing Policy
+            div
+                section#terms-conditions.wrapper.pt-16
+                div.bg-center.bg-cover.rounded-lg.p-8(class="bg-[url('/images/cBlurrs.png')]")
+                    h2.h3.mb-5.font-bold.font-header 1. Terms and Conditions
+                    div.flex.flex-col.gap-6
+                        p.font-para Last Updated: August 30, 2023
+                        p.font-para Welcome to Agentflix. These terms and conditions outline the rules and regulations for using our website and services.
+                        div
+                        p.font-bold.font-header Acceptance of Terms
+                        p.font-para By accessing or using Agentflix, you agree to be bound by these terms and conditions. If you disagree with any part of these terms, please do not use our services.
+                        div
+                        p.font-bold.font-header Intellectual Property
+                        p.font-para The content, design, and intellectual property on Agentflix are owned by us and protected by copyright and other applicable laws. You may not reproduce, distribute, or use our content without our written consent.
+                        div
+                        p.font-bold.font-header User Accounts
+                        p.font-para You may need to create an account to use certain features. You are responsible for maintaining the confidentiality of your account information and for any activities that occur under your account.
+                        div
+                        p.font-bold.font-header Privacy
+                        p.font-para We respect your privacy. Our Privacy Policy outlines how we collect, use, and protect your personal information.
+                        div
+                        p.font-bold.font-header User Conduct
+                        p.font-para You agree not to use our services for any unlawful purpose or in a way that violates the rights of others. You also agree not to interfere with or disrupt our services.
+                        div
+                        p.font-bold.font-header Disclaimer of Liability
+                        p.font-para We strive to provide accurate and up-to-date information, but we do not guarantee the accuracy or reliability of our content. We are not liable for any damages or losses resulting from the use of our website or services.
+                        div
+                        p.font-bold.font-header Changes to Terms
+                        p.font-para We may update these terms and conditions from time to time. You should review this page regularly to stay informed about any changes.
+                        div
+                        p.font-bold.font-header Governing Law
+                        p.font-para These terms and conditions are governed by and construed in accordance with the laws of Canada. Any disputes arising from these terms will be subject to the exclusive jurisdiction of the courts.
+                        p.font-para By using Agentflix, you agree to these terms and conditions. If you have any questions or concerns, please contact us and we will get back to you soon
+                section#privacy-policy.wrapper.pt-16
+                 div.bg-center.bg-cover.rounded-lg.p-8(class="bg-[url('/images/cBlurrs.png')]")
+                    div.card-body.p-10.text-sm
+                    h2.h3.mb-5.font-bold.font-header 2. Privacy Policy
+                    div.flex.flex-col.gap-6
+                        p.font-para Welcome to Agentflix! This privacy policy outlines how we collect, use, and protect
+                        your personal information when you interact with our website and services.
+                        div
+                        p.font-header.font-bold Information We Collect
+                        p.font-para We may collect personal information, such as your name, email address, contact details, and location, when you register on our platform, subscribe to our services, or interact with our website.
+                        div
+                        p.font-header.font-bold How We Use Your Information
+                        p.font-para We use the collected information to provide and improve our services, respond to inquiries, send updates, and personalize your experience. We may also use non-identifiable data for analytics and marketing purposes.
+                        div
+                        p.font-header.font-bold Data Security
+                        p.font-para We take security measures to protect your personal information from unauthorized access, alteration, or disclosure. However, no method of transmission over the internet or electronic storage is completely secure.
+                        div
+                        p.font-header.font-bold Sharing Your Information
+                        p.font-para We do not sell, trade, or rent your personal information to third parties. We may share data with trusted service providers who assist us in operating our website and services, but they are required to keep the information confidential.
+                        div
+                        p.font-header.font-bold Cookies and Tracking
+                        p.font-para We use cookies and similar technologies to enhance your experience, analyze trends, and administer the website. You can manage your preferences for cookies in your browser settings
+                        div
+                        p.font-header.font-bold Your Choices
+                        p.font-para You can choose to opt-out of certain data collection and processing. You have the right to access, correct, and delete your personal information. Please contact us for assistance.
+                        div
+                        p.font-header.font-bold Changes to Privacy Policy
+                        p.font-para This policy may be updated periodically to reflect changes in our practices and services. We encourage you to review this page for the latest information. By using Agentflix, you consent to our privacy policy. If you have any questions or concerns, please reach out to us and we will get back to you soon.
+        
+        div.text-xs.p-32.flex.flex-col.gap-4.text-gray-400
+            div.grid.grid-cols-8.gap-8.p-6
+                    div.flex.flex-col.gap-4.col-span-2
+                        a(href="../")
+                            img(src="/images/logo.svg" class="h-8 self-start")
+                        div Agentflix provides a dedicated online space for both parties to easily connect, attend open houses, and trust each other.
+                        img(src="/images/icons.svg" , class="h-4 self-start")
+
+                    div.flex.flex-col.gap-4
+                        div.font-bold.text-sm Company
+                        a(href="../agentflix/about") About Us
+                        a(href="../agentflix/soon") Careers
+                        a(href="../agentflix/soon") Blog
+                        a(href="../agentflix/landing") Pricing
+                    div.flex.flex-col.gap-4
+                        div.font-bold.text-sm Product
+                        a(href="../agentflix/soon") Success Stories
+                        a(href="../agentflix/soon") How it works
+                        a(href="../filter/topagents") Top Agents
+                        a(href="../filter/topBrokrages") Top Brokerages
+                    div.flex.flex-col.gap-4.col-span-2
+                        div.font-bold.text-sm Resources
+                        a(href="../agentflix/soon") Becoming successful agent
+                        a(href="../agentflix/soon") Tools for agents
+                        a(href="../agentflix/soon") CRM
+                        a(href="../agentflix/soon") How to write a contract
+                    div.flex.flex-col.gap-4.col-span-2
+                        div.font-bold.text-sm Join Our Newsletter
+                        div.flex
+                            input.w-full.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter Your Email Here", class="bg-[#494C7D]")
+                            a.p-2.w-full.text-white.font-medium.flex.justify-center.text-sm(href="./landing", class="bg-gradient-to-r from-[#594ED1] to-[#974ED1]") Subscribe
+                        div.text-xs *  Will send you weekly updates for your better finance management.
+            hr.w-full.h-px.bg-gray-500.border-0
+            div
+                div.grid.grid-cols-5.gap-4.p-4.text-sm.m-auto.text-center(class="w-1/2")
+                    a(href="https://www.google.com") Twitter 
+                    a(href="https://www.google.com") Dribbble 
+                    a(href="https://www.google.com") Instagram 
+                    a(href="https://www.google.com") YouTube 
+                    a(href="https://www.google.com") Slack 
+            div
+            div.grid.grid-cols-3.gap-4.p-4.text-sm.m-auto.text-center(class="w-1/2")
+                a(href="../agentflix/privacypolicy") 2024 All Rights Reserved
+                a(href="../agentflix/privacypolicy") Privacy Policy
+                a(href="../agentflix/terms") Terms of Use
