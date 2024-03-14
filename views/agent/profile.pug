@@ -1,0 +1,17 @@
+include ../partials/mainNav
+    div.overflow-y-auto.p-4(class='h-[83vh] bg-[#2F3159]')
+        div.text-sm.m-2.py-1.px-8.rounded-full.w-fit(class=" bg-[#4A4D91]") Home / Agents By Location / Toronto
+        div.flex.flex-col.p-2.gap-2
+            include ../partials/agentBanner
+            div.grid.grid-cols-12.gap-2.px-4
+                div.col-span-3.flex.flex-col.gap-2(class='mt-[-150px]')
+                    include ../partials/agentCard
+                    include ../partials/brokrageCard
+
+                div.col-span-9.flex.flex-col.gap-2
+                    include ../partials/agentTabs
+                    div.grid.grid-cols-12.gap-2
+                        div.col-span-8
+                            include ../partials/agentListing
+                        div.col-span-4.flex.flex-col.gap-2
+                            include ../partials/agentLeftBar

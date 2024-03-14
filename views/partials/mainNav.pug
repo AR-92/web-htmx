@@ -1,0 +1,10 @@
+extends ../layout
+
+block content
+    div.flex.text-gray-200
+        include sideBar
+        div.w-full(class="bg-[#2F3159]")
+            div.flex.flex-col.h-full
+                include navBar
+                include subNav
+                block content

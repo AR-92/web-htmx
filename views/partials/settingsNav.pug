@@ -1,0 +1,11 @@
+div.w-full.rounded-lg.p-4.flex.flex-col.gap-2.bg-center.bg-cover(class="bg-[url('/images/cBlurrs.png')]")
+    a.p-2.gap-2.flex.rounded.lg(href="/agent/settings?user="+data.profiles_id )
+        div.w-full.h-6 Profile Settings
+    a.p-2.gap-2.flex.rounded.lg(href="/agent/settings/changepassword?user="+data.profiles_id )
+        div.w-full.h-6 Change Password
+    //- a.p-2.gap-2.flex.rounded.lg(href="/agent/settings/2factor")
+    //-     div.w-full.h-6 2 Factor Authentication
+    //- a.p-2.gap-2.flex.rounded.lg(href="/agent/settings/notificationsettings")
+    //-     div.w-full.h-6 Notification Settings
+    a.p-2.gap-2.flex.rounded.lg(href="/agent/settings/accountDelete?user="+data.profiles_id )
+        div.w-full.h-6 Delete Account

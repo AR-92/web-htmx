@@ -1,0 +1,50 @@
+extends ../layout
+block content
+    div(class="bg-[#2F3159]")
+        div.overflow-y-auto.px-16.py-4.text-white.z-10(class="bg-[url('/images/patterns.svg')]  min-h-screen")
+            div.flex.justify-between.p-4
+                a(href="../")
+                    img(src="/images/logo.svg")
+                a.p-2.w-40.rounded-lg.text-white.font-medium.flex.justify-center.text-sm.border.border-slate-500(href="../auth/login") 
+                    div.self-center Logout
+            div.text-sm.m-2.py-1.px-8.rounded-full.w-fit.mt-5(class=" bg-[#4A4D91]") Home / Agents By Location / Toronto
+            div.flex.flex-col.p-2.gap-2
+                div.grid.grid-cols-12.gap-6
+                    div.col-span-3
+                        include ../partials/settingsAdmin
+                    div.col-span-9.flex.flex-col.gap-3.rounded-lg.p-6.bg-center.bg-cover(class="bg-[url('/images/cBlurrs.png')]")
+                        div.flex.flex-col.gap-3
+                            div.font-bold Users List
+                            div You can edit yours here !
+
+                        div.flex.flex-col.text-sm.font-bold
+                        - for (var i = 0; i < cards.length; i++)
+                            
+                            div.p-2.px-8.flex.border.border-slate-400.w-full.rounded-lg.text-xs.items-center.justify-between
+                                div=i+1
+
+                                //- img.rounded-full.bg-cover.w-20.h-20(src="/images/dp.png")
+                                div.rounded-full.w-20.h-20
+                                    figure.avatar.flex.aspect-square.text-surface-50.font-semibold.justify-center.items-center.overflow-hidden.isolate.bg-primary-300.w-full.rounded-full.m-auto.z-0(data-testid='avatar')
+                                        img.avatar-image.w-full.h-full.object-cover(src="https://zjhfywemboaxpglmjpaq.supabase.co/storage/v1/object/public/avatar/"+cards[i].profiles_id+".jpg")
+
+                                div
+                                    div.text-gray-400 Agent Name
+                                    div=cards[i].name
+                                div
+                                    div.text-gray-400 Experience
+                                    div=cards[i].experience+' Years'
+                                div
+                                    div.text-gray-400 Language
+                                    div=cards[i].language
+                                div
+                                    div.text-gray-400 Email
+                                    div=cards[i].email
+                                div
+                                    div.text-gray-400 Date Added
+                                    div=new Date(cards[i].created_at).toISOString().slice(0, 10)
+                                div.flex.flex-col.gap-2
+                                    a(href="../admin/editusers") Edit
+                                    a Delete
+
+

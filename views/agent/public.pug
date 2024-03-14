@@ -1,0 +1,59 @@
+include ../partials/mainNav
+    div.overflow-y-auto.p-2(class='h-[83vh]')
+        div.text-sm.m-2.py-1.px-8.rounded-full.w-fit(class=" bg-[#4A4D91]") Home / Agents By Location / Toronto
+        div.flex.flex-col.p-2.gap-2
+            include ../partials/agentBanner
+            div.grid.grid-cols-12.gap-2.px-4
+                div.col-span-3.flex.flex-col.gap-2(class='mt-[-150px]')
+                    include ../partials/agentCard
+                    include ../partials/brokrageCard
+                div.col-span-9.flex.flex-col.gap-2
+                    div.w-full.rounded-lg.flex.justify-between(class="bg-[url('/images/hBlurrs.png')]")
+                        div.gap-5.flex
+                            img.w-10.h-10.self-center(src="/images/lang.svg")
+                            div.self-center
+                                div.self-center.text-gray-400.text-sm.font-semibold Asking Price
+                                div.self-center.text-lg.font-bold 7,950,000 CAD
+                        a.m-4.p-2.px-4.rounded-lg.text-white.font-medium.flex.justify-center.text-sm(href="/" class="bg-gradient-to-r from-[#594ED1] to-[#974ED1]") Request A Tour
+                        
+                    div.w-full.rounded-lg.p-4(class="bg-[url('/images/hBlurrs.png')]")
+                        div.my-2.font-bold About
+                        div.text-sm ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur    
+                    div.w-full.rounded-lg.p-2(class="bg-[url('/images/hBlurrs.png')]")
+                        div.my-2.font-bold Gallery
+                        div.flex.gap-2
+                            div.min-w-52.h-36.rounded-lg.bg-center(class="bg-[url('/images/cover.jpg')]")
+                            div.min-w-52.h-36.rounded-lg.bg-center(class="bg-[url('/images/cover.jpg')]")
+                            div.min-w-52.h-36.rounded-lg.bg-center(class="bg-[url('/images/cover.jpg')]")
+                    div.w-full.rounded-lg.p-2(class="bg-[url('/images/hBlurrs.png')]")
+                        div.my-2.font-bold Location
+                        div.h-40.w-full.rounded-lg.bg-cover.bg-center(class="bg-[url('/images/map.png')]")
+                    div.w-full.rounded-lg.p-2(class="bg-[url('/images/hBlurrs.png')]")
+                        div.my-2.font-bold Features
+                        div.grid.grid-cols-5.p-4
+                            - for (var i = 0; i < 18; i++)
+                                div.flex.gap-1
+                                    img(src="/images/tick.svg")
+                                    //- div.w-10.h-10.bg-blue-500
+                                    div.ml-2 asdlakf
+                    div.w-full.rounded-lg.p-2(class="bg-[url('/images/hBlurrs.png')]")
+                        div.my-2.font-bold Request A Tour
+                        div.flex.flex-col.gap-4.p-4
+                            div.flex
+                                div.w-full
+                                    div.font-bold.font.text-sm.mb-2 Your Name 
+                                    input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter Your Email Here", class="bg-[#494C7D]")
+                            div.flex.gap-4
+                                div.w-full
+                                    div.font-bold.font.text-sm.mb-2 Email 
+                                    input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter Your Email Here", class="bg-[#494C7D]")
+                                div.w-full
+                                    div.font-bold.font.text-sm.mb-2 Phome Number 
+                                    input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter Your Email Here", class="bg-[#494C7D]")
+
+                            div.flex.gap-4
+                                div.w-full
+                                    div.font-bold.font.text-sm.mb-2 Message
+                                    textarea.w-full.rounded-lg.h-40.text-xs.p-2.outline-transparent(placeholder="Please Enter Your Email Here", class="bg-[#494C7D]")
+
+                            div.m-4.p-2.px-4.rounded-lg.text-white.font-medium.flex.justify-center.text-sm(href="/" class="bg-gradient-to-r from-[#594ED1] to-[#974ED1]") Submit

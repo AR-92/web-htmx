@@ -1,0 +1,11 @@
+div.grid.grid-cols-5.gap-4
+    - for (var i = 0; i < cards.length; i++)
+        a.rounded-lg.bg-center.bg-cover(href='../agent/profile?user='+cards[i].profiles_id , class="bg-[#4A4D91] bg-[url('/images/cBlurrs.png')]")
+            div.bg-contain.bg-no-repeat.w-full.flex.flex-col.p-2.items-center(class="bg-[url('/images/graph.png')]")
+                div.rounded-full.w-32.h-32.my-4
+                    figure.avatar.flex.aspect-square.text-surface-50.font-semibold.justify-center.items-center.overflow-hidden.isolate.bg-primary-300.w-full.rounded-full.m-auto.z-0(data-testid='avatar')
+                        img.avatar-image.w-full.h-full.object-cover(src="https://zjhfywemboaxpglmjpaq.supabase.co/storage/v1/object/public/avatar/"+cards[i].profiles_id+".jpg")
+
+                div.font-bold=cards[i].name
+                div.font-medium.text-xs.rounded-full.px-4.py-1.my-2(class="bg-[#3b3e74]") 
+                    div=cards[i].brokerage

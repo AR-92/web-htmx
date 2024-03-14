@@ -1,0 +1,38 @@
+extends ../layout
+
+block content
+    div(class="bg-[#2F3159]")
+        div.min-h-screen.items-center.flex.flex-col
+            a.p-4.absolute.left-0(href='../')
+                img(src="/images/logo.svg")
+            img.absolute.right-0.z-10(src="/images/graph.png", alt="", class="w-[300px]")
+            div.m-auto.flex.flex-col.gap-3.p-6.rounded-lg.items-center.text-white.mt-20.z-10.bg-center.bg-cover(class="bg-[url('/images/cBlurrs.png')] w-[600px]")
+                div.font-semibold.text-3xl Privacy Policy
+                div.text-xs.text-gray-500 AgentFlix: Last Updated: August 30, 2023
+
+                div.flex.flex-col.gap-2.text-sm
+                    p Welcome to Agentflix! This privacy policy outlines how we collect, use, and protect your personal information when you interact with our website and services.
+                    div
+                    p.font-header.font-bold Information We Collect
+                    p We may collect personal information, such as your name, email address, contact details, and location, when you register on our platform, subscribe to our services, or interact with our website.
+                    div
+                    p.font-header.font-bold How We Use Your Information
+                    p We use the collected information to provide and improve our services, respond to inquiries,send updates, and personalize your experience. We may also use non-identifiable data for analytics and marketing purposes.
+                    div
+                    p.font-bold.font-header Data Security
+                    p We take security measures to protect your personal information from unauthorized access, alteration, or disclosure. However, no method of transmission over the internet or electronic storage is completely secure.
+                    div
+                    p.font-bold.font-header Sharing Your Information
+                    p We do not sell, trade, or rent your personal information to third parties. We may share data with trusted service providers who assist us in operating our website and services, but they are required to keep the information confidential.
+                    div
+                    p.font-bold.font-header Cookies and Tracking
+                    p We use cookies and similar technologies to enhance your experience, analyze trends, and administer the website. You can manage your preferences for cookies in your browser settings
+                    div
+                    p.font-bold.font-header Your Choices
+                    p You can choose to opt-out of certain data collection and processing. You have the right to access, correct, and delete your personal information. Please contact us for assistance.
+                    div
+                    p.font-bold.font-header Changes to Privacy Policy
+                    p This policy may be updated periodically to reflect changes in our practices and services. We encourage you to review this page for the latest information. By using Agentflix, you consent to our privacy policy. If you have any questions or concerns, please reach out to us and we will get back to you soon.
+                a.p-2.rounded-lg.w-fit.px-6.text-white.font-medium.flex.justify-center.text-sm(href="./landing", class="bg-gradient-to-r from-[#594ED1] to-[#974ED1]") Go Back !
+            img(src="/images/footerShade.svg", alt="", class="absolute bottom-0")
+            img(src="/images/footer.png")

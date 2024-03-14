@@ -1,0 +1,96 @@
+include ../partials/mainNav
+     div.overflow-y-auto.px-16(class='h-[83vh]')
+        div.text-sm.m-2.py-1.px-8.rounded-full.w-fit(class=" bg-[#4A4D91]") Home / Agents By Location / Toronto
+        div.flex.flex-col.p-2.gap-2
+            div.grid.grid-cols-12.gap-6
+                div.col-span-3
+                    include ../partials/settingsListing
+                div.col-span-9.flex.flex-col.gap-12.rounded-lg.p-6.bg-center.bg-cover(class="bg-[url('/images/cBlurrs.png')]")
+                    div.flex.flex-col.gap-3
+                        div.font-bold My Profile
+                        div This information will be displayed publicity so be careful what you share
+                    div.flex.flex-col.gap-3
+                        div.font-bold Profile Picture
+                        div.flex
+                            img.rounded-full.w-16.h-16.self-center(src="/images/dp.png")
+                            div.p-2.grow.self-center you can upload jpg file, Max size of 3mb
+                            
+                            div.flex.gap-2.w-52.h-10.self-center
+                                a.p-2.w-full.rounded-lg.text-white.font-medium.flex.justify-center.text-sm(href="../auth/register", class="bg-gradient-to-r from-[#594ED1] to-[#974ED1]") 
+                                    div.self-center Upload New
+                                a.p-2.w-full.rounded-lg.text-white.font-medium.flex.justify-center.text-sm.border.border-slate-500(href="../auth/login") 
+                                    div.self-center Remove
+
+                    div.flex.flex-col.gap-10.p-4
+                        div.flex.gap-4
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold First Name 
+                                input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold Last Name 
+                                input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                        div.flex.gap-4
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold Email Address 
+                                input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold Phone Number 
+                                div.flex.gap-2
+                                    input.w-20.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                                    input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                        div.flex
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold Brokrage 
+                                input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                        div.flex
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold Area Served 
+                                input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                        div.flex
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold Specialities 
+                                input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                        div.flex.gap-4
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold Date Of Birth
+                                div.flex.gap-2
+                                    input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                                    input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                                    input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold City 
+                                input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                        div.flex
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold Address 
+                                input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                        div.flex.gap-4
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold State/Province 
+                                input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold Country 
+                                input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                        div.flex.gap-4
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold About Myself 
+                                textarea.w-full.rounded-lg.text-xs.px-2.outline-transparent.h-32(placeholder="Please Enter", class="bg-[#494C7D]")
+                        div Other Information
+                        div.flex.gap-4
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold Religion
+                                input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold Gender 
+                                input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                        div.flex.gap-4
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold Nationality
+                                input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                            div.w-full.flex.flex-col.gap-3
+                                div.font-bold Language 
+                                input.w-full.rounded-lg.h-10.text-xs.px-2.outline-transparent(placeholder="Please Enter", class="bg-[#494C7D]")
+                        a.p-2.w-full.rounded-lg.text-white.font-medium.flex.justify-center.text-sm(href="../auth/register", class="bg-gradient-to-r from-[#594ED1] to-[#974ED1]") 
+                          div.self-center Update 
+                            
+                            

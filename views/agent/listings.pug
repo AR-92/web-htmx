@@ -1,0 +1,24 @@
+include ../partials/mainNav
+     div.overflow-y-auto.px-16(class='h-[83vh]')
+        div.text-sm.m-2.py-1.px-8.rounded-full.w-fit(class=" bg-[#4A4D91]") Home / Agents By Location / Toronto
+        div.flex.flex-col.p-2.gap-2
+            div.grid.grid-cols-12.gap-6
+                div.col-span-3
+                    include ../partials/settingsListing
+                div.col-span-9.flex.flex-col.gap-12.rounded-lg.p-6.bg-center.bg-cover(class="bg-[url('/images/cBlurrs.png')]")
+                    div.flex.flex-col.gap-3
+                        div.font-bold My Listings
+                        div All listings created by you.
+                    div.flex.flex-col.gap-3.my-3.text-sm.font-bold
+                        - for (var i = 0; i < 12; i++)
+                            div.p-2.flex.border.border-slate-300.w-full.rounded-lg.gap-4.text-xs.items-center
+                                img.bg-cover.w-20.h-20(src="/images/lis.png")
+                                div
+                                    div Listing Title Will Go Here
+                                    div 435 One Drive, Commerical Plaza, Clearnc, Toronto 94540, Canada
+                                div
+                                    div.text-gray-400 Date Added
+                                    div 13 Feb 2024
+                                div.flex.gap-2
+                                    a Edit
+                                    a Delete

@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+    div(class="bg-[#2F3159]")
+        div.min-h-screen.items-center.flex.flex-col
+            a.p-4.absolute.left-0(href='../')
+                img(src="/images/logo.svg")
+            img.absolute.right-0.z-10(src="/images/graph.png", alt="", class="w-[300px]")
+            div.m-auto.flex.flex-col.gap-3.p-6.rounded-lg.items-center.text-white.mt-20.z-10.bg-center.bg-cover(class="bg-[url('/images/cBlurrs.png')] w-[450px]")
+                div.font-semibold.text-3xl 404 Error
+                div.text-xs.text-gray-500 This page does not exists !
+
+                a.p-2.rounded-lg.w-full.text-white.font-medium.flex.justify-center.text-sm(href="./landing", class="bg-gradient-to-r from-[#594ED1] to-[#974ED1]") Go Back !
+            img(src="/images/footerShade.svg", alt="", class="absolute bottom-0")
+            img(src="/images/footer.png")

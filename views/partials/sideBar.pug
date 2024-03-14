@@ -1,0 +1,35 @@
+div.w-72.flex.flex-col.gap-2.h-screen.text-sm.border-r.border-slate-500(class="bg-[url('/images/sBlurrs.png')] bg-[#2F3159]")
+    a.p-4.border-b.border-slate-500(href="../")
+        img(src="/images/logo.svg")
+    div.flex.flex-col.grow
+        div.px-4.py-2.text-xs.font-bold Good Evening!
+        a(href="/" , class="hover:bg-[#2F3159]")
+            div.px-4.py-3.gap-2.flex
+                img(src="/images/home.svg")
+                div.self-center Home
+        a(href="/filter/topagents" , class="hover:bg-[#2F3159]")
+            div.px-4.py-3.gap-2.flex
+                img(src="/images/search.svg")
+                div.self-center Search Agents
+        if auth.data.session
+            a(href='/agent/settings?user=0bd1e490-ccd0-424e-b546-c7a2d057cdff' , class="hover:bg-[#2F3159]")
+                //- a(href='/agent/settings?user='+data.profiles_id , class="hover:bg-[#2F3159]")
+                div.px-4.py-3.gap-2.flex
+                    img(src="/images/settings.svg")
+                    div.self-center Settings
+        if auth.data.session
+            a(href="/auth/logout" , class="hover:bg-[#2F3159]")
+                div.px-4.py-3.gap-2.flex
+                    img(src="/images/logout.svg")
+                    div.self-center Logout
+    if !auth.data.session
+        a.m-6.rounded-full.p-2(href="/agentflix/landing" , class="bg-[#1B8D9C]")
+            div.w-full.rounded-full.flex.justify-center
+                div.font-bold.text-white I am an Agent
+    if auth.data.session
+        a.w-full.flex.gap-2.p-4.items-center.border-t.border-slate-500(href='/agent/profile')
+            img.rounded-full.w-10.h-10(src="/images/dp.png")
+            div.flex.grow.flex-col
+                div.font-bold Ahmed
+                div.text-xs.text-gray-400 Agent
+            img(src="/images/down.svg")
