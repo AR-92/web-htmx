@@ -1,7 +1,7 @@
 - for (var i = 0; i < 3; i++)
     div.w-full.rounded-lg.p-4.my-2.bg-center.bg-cover(class="bg-[url('/images/cBlurrs.png')]")
         div.font-bold.text-sm.mb-4 Current Listings By Alexander
-        a(href="../agent/public?user="+data.profiles_id) 
+        a(href="../agent/public?user="+data[0].profiles_id) 
             div.rounded-lg.h-52.w-full.bg-center.bg-cover.flex.flex-col(class="bg-[url('/images/lis.png')]")
                 div.flex.justify-between.p-4.mt-16
                     img.h-6.w-6(src="/images/leftarrow.png")

@@ -2,10 +2,10 @@ extends ../layout
 
 block content
     div.flex.text-gray-200
-        include sideBar
-        include sidebarMini
+        //- include ../partials/sidebarfilter
+        div(hx-swap="outerHTML" hx-trigger="load" hx-get="/partials/sidebarfilter")
         div.w-full(class="bg-[#2F3159]")
             div.flex.flex-col.h-full
-                include navBar
-                include subNav
+                div(hx-swap="outerHTML" hx-trigger="load" hx-get="/partials/navbar")
+                div(hx-swap="outerHTML" hx-trigger="load" hx-get="/partials/subnav")
                 block content

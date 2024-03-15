@@ -1,7 +1,6 @@
 div.w-full.rounded-lg.bg-center.bg-cover(class="bg-[url('/images/cBlurrs.png')]")
     div.flex.flex-col.items-center.p-4.gap-4
         div.flex.flex-col.items-center.bg-contain.bg-cover.w-full(class="bg-[url('/images/graph.png')]")
-            //- img.rounded-full.w-32.h-32.my-4(src="/images/dp.png")
             div.rounded-full.w-32.h-32.my-4
                 figure.avatar.flex.aspect-square.text-surface-50.font-semibold.justify-center.items-center.overflow-hidden.isolate.w-full.rounded-full.m-auto.z-0(data-testid='avatar')
                     img.avatar-image.w-full.h-full.object-cover(src="https://zjhfywemboaxpglmjpaq.supabase.co/storage/v1/object/public/avatar/"+data.profiles_id+".jpg")
@@ -9,7 +8,6 @@ div.w-full.rounded-lg.bg-center.bg-cover(class="bg-[url('/images/cBlurrs.png')]"
             div.font-bold=data.name
             div.font-medium.text-xs.rounded-full.px-4.py-1.my-2(class="bg-[#3b3e74]") 
                 div Brokrage Name
-        //- hr.w-40.h-px.my-3.bg-gray-500.border-0
         div.flex.flex-col.gap-3.w-full.mx-4
             div.gap-5.flex
                 img(src="/images/location.svg")
@@ -32,5 +30,4 @@ div.w-full.rounded-lg.bg-center.bg-cover(class="bg-[url('/images/cBlurrs.png')]"
                     div.self-center.text-xs.text-gray-400 Email
                     div.self-center.text-sm=data.email
 
-        //- hr.w-40.h-px.my-3.bg-gray-500.border-0
-        a.m-4.p-2.px-4.rounded-lg.text-white.font-medium.flex.justify-center.text-sm(href="../agent/contact" class="bg-gradient-to-r from-[#594ED1] to-[#974ED1]") Contact Agent Name
+        a.m-4.p-2.px-4.rounded-lg.text-white.font-medium.flex.justify-center.text-sm(hx-swap="innerHTML" hx-trigger="click" hx-target="#agenttabs" hx-get='/partials/agentcontact?user='+data.profiles_id class="bg-gradient-to-r from-[#594ED1] to-[#974ED1] cursor-pointer")='Contact '+data.name

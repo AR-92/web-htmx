@@ -7,11 +7,10 @@ include ../partials/mainNav
                 div.col-span-3.flex.flex-col.gap-2(class='mt-[-150px]')
                     include ../partials/agentCard
                     include ../partials/brokrageCard
-
+  
                 div.col-span-9.flex.flex-col.gap-2.mt-4
                     include ../partials/agentTabs
                     div.grid.grid-cols-1(class="xl:grid-cols-12 xl:gap-2")
-                        div.col-span-8
-                            include ../partials/agentListing
+                        div.col-span-8(id="agenttabs" hx-swap="innerHTML" hx-trigger="load" hx-get='/partials/agentListing?user='+data.profiles_id )
                         div.col-span-4.flex.flex-col.gap-2
                             include ../partials/agentLeftBar

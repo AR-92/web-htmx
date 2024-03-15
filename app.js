@@ -18,6 +18,7 @@ app.use(supa);
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Include routes
+const partialsRoute = require("./routes/partials");
 const adminRoute = require("./routes/admin");
 const authRoute = require("./routes/auth");
 const brokrage = require("./routes/brokrage");
@@ -52,6 +53,7 @@ app.use("/brokrage", brokrage);
 app.use("/agent", agentRoute);
 app.use("/agentflix", othersRoute);
 app.use("/filter", filterRoute);
+app.use("/partials", partialsRoute);
 
 // Define a 404 route handler
 app.use((req, res, next) => {
