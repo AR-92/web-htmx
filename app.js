@@ -35,7 +35,7 @@ app.get("/", async (req, res) => {
         // await supabaseClient.auth.signOut()
         const auth = await supabaseClient.auth.getSession()
 
-        console.log('this is auth ',auth)
+        // console.log('this is auth ',auth)
         // console.log('this is auth ',auth,data.session.user,e)
         const locations = await general.getAllLocations(supabaseClient);
         const data = await general.get(supabaseClient);
@@ -59,7 +59,7 @@ app.use((req, res, next) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
