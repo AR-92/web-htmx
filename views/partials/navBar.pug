@@ -1,9 +1,7 @@
-div.w-full.flex.p-3.gap-2.justify-between.border-b.border-slate-500.bg-cover.bg-center(class="bg-[url('/images/hBlurrs.png')] ")
-
+div.w-full.flex.p-3.gap-14.justify-between.border-b.border-slate-500.bg-cover.bg-center(class="bg-[url('/images/hBlurrs.png')] ")
     div.flex.justify-between.text-sm.w-full
-        //- div.self-center Search by Name , Location or Brokerage
-        input.rounded-lg.h-10.text-xs.px-2.outline-transparent.border.border-slate-500(class="w-full",placeholder="Search by Name , Location or Brokerage" class="bg-[#494C7D]")
-        img(class="px-4",src="/images/search.svg")
+        input.rounded-lg.text-xs.px-2.outline-transparent.border.border-slate-500(class="w-full" placeholder="Search by Name , Location or Brokerage" class="bg-[#494C7D]")
+        img(class="px-4 w-14" src="/images/search.svg")
     if !auth.data.session
         div.flex.gap-2.w-fit
             a.p-2.px-4.rounded-lg.text-white.font-medium.flex.justify-center.text-sm.border.border-slate-500(href="../auth/login" , class="hidden xl:flex") 
